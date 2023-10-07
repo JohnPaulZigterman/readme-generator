@@ -1,7 +1,7 @@
 {
-  "name": "28-stu_mini-project",
+  "name": "readme-generator",
   "version": "1.0.0",
-  "description": "In this activity, you will build a command-line tool that generates an HTML portfolio page from user input.",
+  "description": "This is a generator that spits out README files",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
