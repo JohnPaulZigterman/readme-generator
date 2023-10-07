@@ -57,28 +57,31 @@ inquirer
 
 ## Table of Contents
 
-1. Project Description
-2. Installation
-3. Contribution Guidelines
-4. Test Instructions
+1. [Description](#description)
+2. [Usage](#usage)
+3. [Installation](#installation)
+4. [Contributing](#contributing)
+5. [Testing](#test)
+6. [License](#license)
+7. [Questions](#questions)
 
 ## Description
 
 ${response.description}
 
-## Installation
-
-${response.installation}
-
 ## Usage
 
 ${response.usage}
+
+## Installation
+
+${response.installation}
 
 ## Contributing
 
 ${response.contributions}
 
-## Test
+## Testing
 
 ${response.testing}
 
