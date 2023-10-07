@@ -34,14 +34,9 @@ inquirer
             name: 'testing',
         },
         {
-            type: 'input',
-            message: 'Please provide installation instructions.',
-            name: 'installation',
-        },
-        {
             type: 'list',
             message: 'Please select a license.',
-            choices: ['MIT', 'Open Source'],
+            choices: ['MIT', 'EPL 1.0', 'Hippocratic 3.0', 'Artistic 2.0', 'Unlicense'],
             name: 'license',
         },
         {
@@ -57,32 +52,45 @@ inquirer
     ])
     .then((response) =>
         fs.writeFile(response.title.toLowerCase().split(" ").join("") + ".md", `
-        # ${response.title}
+# ${response.title}
+![License: ${response.license}](https://img.shields.io/badge/License-${response.license.toLowerCase().split(" ").join("_")}-green.svg)
 
-        ## Table of Contents
+## Table of Contents
 
-        1. Project Description
-        2. Installation
-        3. Contribution Guidelines
-        4. Test Instructions
+1. Project Description
+2. Installation
+3. Contribution Guidelines
+4. Test Instructions
 
-        ## Project Description
+## Description
 
-        ${response.description}
+${response.description}
 
-        ## Installation
+## Installation
 
-        ${response.installation}
+${response.installation}
 
-        ## Contribution Guidelines
+## Usage
 
-        ${response.contributions}
+${response.usage}
 
-        ## Test Instructions
+## Contributing
 
-        ${response.testing}
+${response.contributions}
 
-        When creating an open source project on
+## Test
+
+${response.testing}
+
+## License
+
+This project is licensed under the ${response.license} license.
+
+## Questions
+
+You can find my GitHub profile at https://github.com/${response.github}
+
+You may also reach me with additional questions at ${response.email}
         `, (err) =>
             err ? console.error(err) : console.log('success!')
         )
