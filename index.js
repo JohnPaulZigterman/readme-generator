@@ -61,7 +61,7 @@ inquirer
 2. [Usage](#usage)
 3. [Installation](#installation)
 4. [Contributing](#contributing)
-5. [Testing](#test)
+5. [Testing](#testing)
 6. [License](#license)
 7. [Questions](#questions)
 
