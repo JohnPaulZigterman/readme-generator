@@ -14,23 +14,23 @@
 
 ## Description
 
-This project generates a professional README file for the user based on prompts.
+This is a project that takes in user input and generates a professional README file.
 
 ## Usage
 
-This application can be used by running "node index.js" and following the prompts
+You can use the application by typing "node index.js" in the correct file folder and following the prompts.
 
 ## Installation
 
-This project can be installed using node.js and inquirer.
+To use this application you must have node.js and inquirer.
 
 ## Contributing
 
-You can contribute by going to the GitHub and pushing any ideas to a feature branch.
+You may contribute to this project in any manner you wish.
 
 ## Testing
 
-You can test this app in any manner you like, I do not have a preferred method yet.
+You may test this application in any manner you wish.
 
 ## License
 
